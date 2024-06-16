@@ -1,7 +1,4 @@
-
-### Project Summary: Euro Infographics
-
-#### Title: Euro Infographics
+## Project Summary: Euro Infographics
 
 #### Data Sources:
 1. **Kaggle: European Soccer Database with SQLite3**
