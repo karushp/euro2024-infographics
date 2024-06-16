@@ -20,7 +20,12 @@ def history(team1,team2):
         # Filling NULL value with NA
         df['SpecialWinConditions'].fillna('NA',inplace=True)
 
+
     clean_euro_df(euro_df)
+
+    # Keeping only relevant columns
+    euro_df = euro_df [['Date',	'Time', 'HomeTeamName', 'AwayTeamName',	'HomeTeamGoals','AwayTeamGoals',
+                        'Stage','SpecialWinConditions', 'Year']]
 
     mask = ((euro_df['HomeTeamName'] == team1) & (euro_df['AwayTeamName'] == team2)) | \
            ((euro_df['HomeTeamName'] == team2) & (euro_df['AwayTeamName'] == team1))

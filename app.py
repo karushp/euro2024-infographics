@@ -38,15 +38,22 @@ if st.button("Show Analysis"):
     else:
         # Apply Plot Goals Scored function on the selected teams
         if team1 != 'Select team' or team2 != 'Select team':
-            st.write(f"### Historical Analysis for {team1 if team1 != 'Select Team' else ''} {'and' if team1 != 'Select Team' and team2 != 'Select Team' else ''} {team2 if team2 != 'Select Team' else ''}")
+            st.write(f"### Euro Match History between for {team1 if team1 != 'Select Team' else ''} {'and' if team1 != 'Select Team' and team2 != 'Select Team' else ''} {team2 if team2 != 'Select Team' else ''}")
             history(team1, team2)
 
 
         # Apply Country Performance WC2014 function on each selected team
-        # Adding a frame around the plot
-        frame_style = {'width': '100%', 'padding': '20px', 'border': '1px solid #b0c4de', 'border-radius': '5px'}
-        with st.frame(style=frame_style):
-            if team1 != 'Select Team':
+        # apply inside the column
+        st.write(f"### World Cup 2014 Performance of {team1 if team1 != 'Select Team' else ''} {'and' if team1 != 'Select Team' and team2 != 'Select Team' else ''} {team2 if team2 != 'Select Team' else ''}")
+        col3,col4 = st.columns(2)
+        with col3 :
+             if team1 != 'Select Team':
                 country_performance_WC2014(team1)
+        with col4:
+            if team2 != 'Select Team' :
+                country_performance_WC2014(team2)
+
+            # if team1 != 'Select Team':
+            #     country_performance_WC2014(team1)
             # if team2 != 'Select Team':
             #     country_performance_WC2014(team2)
