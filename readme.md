@@ -1,5 +1,7 @@
 ### Euro Infographics
 
+[View Web App](https://euro-info.streamlit.app/)
+
 #### Data Sources:
 1. **Kaggle: European Soccer Database with SQLite3**
    [Link to Dataset](https://www.kaggle.com/code/alaasedeeq/european-soccer-database-with-sqlite3)
@@ -19,3 +21,5 @@ The Euro Infographics project aims to create a series of visualizations and info
 
 #### Disclaimer:
 The visualizations and information provided in this project are for informational purposes only. The data and insights presented are not intended to be used for betting, commercial exploitation, or any other purpose beyond general information and enjoyment.
+
+
