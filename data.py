@@ -169,6 +169,7 @@ def country_performance_WC2014(country):
     plt.title(f'World cup 2014 performance of {country}')
     plt.ylabel('Percentage')
     plt.xlabel('Outcome')
+    plt.ylim(0,100)
 
     # Show the plot
     st.pyplot()
@@ -212,6 +213,7 @@ def plot_team_statistics(team_name):
 
         # Add title and labels
         plt.title(f'Euro Cup Stats for {team_name}')
+        plt.ylim(0,100)
         plt.ylabel('Percentage')
 
         # Show Plot
